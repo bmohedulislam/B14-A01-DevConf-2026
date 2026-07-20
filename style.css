@@ -137,7 +137,7 @@ header{
 =========================*/
 
 .speakers{
-    padding:100px 0;
+    padding:60px 0;
     background:#f8f9fc;
 }
 
@@ -297,7 +297,7 @@ header{
 .featured{
     background:#0d1b2a;
     color:#fff;
-    transform:scale(1.05);
+   
 }
 
 .featured h3,
@@ -317,53 +317,108 @@ header{
 }
 
 /*=========================
-      AI Section
+      Job Board
 =========================*/
 
-.ai-section{
-    padding:100px 0;
-    background:#f8f9fc;
+.job-board{
+    padding:60px 0;
+    background:#f8fafc;
 }
 
-.ai-box{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-    padding:180px 30px;
-
-    background:#f1f3f5;
-    border:3px dashed #bfc5cc;
-    border-radius:18px;
-
+.section-heading{
     text-align:center;
+    margin-bottom:60px;
 }
 
-.ai-box h2{
+.section-heading h2{
     font-size:42px;
-    color:#222;
+    color:#111827;
     margin-bottom:15px;
 }
 
-.ai-box p{
-    font-size:18px;
-    color:#666;
-    margin-bottom:35px;
+.section-heading p{
+    max-width:650px;
+    margin:auto;
+    color:#6b7280;
+    line-height:1.8;
 }
 
-.ai-btn{
-    display:inline-block;
-    padding:15px 35px;
+.job-wrapper{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.job-card{
+    background:#fff;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.job-card:hover{
+    transform:translateY(-10px);
+}
+
+.job-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.job-top img{
+    width:55px;
+    height:55px;
+    object-fit:contain;
+}
+
+.job-type{
     background:#2563eb;
     color:#fff;
+    padding:7px 16px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.job-card h3{
+    font-size:24px;
+    color:#111827;
+    margin-bottom:8px;
+}
+
+.company{
+    color:#2563eb;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.job-info{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    color:#6b7280;
+    margin-bottom:30px;
+}
+
+.apply-btn{
+    display:block;
+    text-align:center;
     text-decoration:none;
-    border-radius:8px;
+    padding:14px;
+    background:#2563eb;
+    color:#fff;
+    border-radius:10px;
     font-weight:600;
     transition:.3s;
 }
 
-.ai-btn:hover{
+.apply-btn:hover{
     background:#1d4ed8;
 }
+
 
 /*=========================
         Footer
